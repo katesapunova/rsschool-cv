@@ -45,7 +45,7 @@ CV#1. Markdown & Git
 
 ## Education
 
-__Belarus State University__ - _Faculty of Mathematics and Economic Activities_
+__Belarus State University__ - _Faculty of Mechanics and Mathematics_
 
 ********************
 
