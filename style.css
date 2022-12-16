@@ -1,3 +1,73 @@
-h1 {
-    color: blueviolet;
-}
+@font-face {
+    font-family: "Basteleur";
+    font-style: normal;
+    font-weight: 700;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: url("assets/fonts/basteleur/Basteleur-Bold.ttf") format("truetype"),
+         /* Если не получилось, загрузит woff2 */
+         url("assets/fonts/basteleur/Basteleur-Bold.woff2") format("woff2"),
+         /* Если браузер не поддерживает woff2, загрузит woff */
+         url("assets/fonts/basteleur/Basteleur-Bold.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: "Basteleur";
+    font-style: normal;
+    font-weight: 400;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: url("assets/fonts/basteleur/Basteleur-Moonlight.ttf") format("truetype"),
+         /* Если не получилось, загрузит woff2 */
+         url("assets/fonts/basteleur/Basteleur-Moonlight.woff2") format("woff2"),
+         /* Если браузер не поддерживает woff2, загрузит woff */
+         url("assets/fonts/basteleur/Basteleur-Moonlight.woff") format("woff");
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth; 
+  }
+
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .body {
+    min-height: 100vh;
+    margin: 0; padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #151515;
+    background: url(/assets/svg/Ellipse\ 76.svg) right bottom no-repeat, 
+    url(/assets/svg/Ellipse\ 77.svg) right bottom no-repeat, 
+    url(/assets/svg/Ellipse\ 78.svg) right bottom no-repeat, 
+    url(/assets/svg/Ellipse\ 79.svg) right bottom no-repeat;
+    font-family: 'Inter';
+  }
+
+  .nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+  }
+
+  .nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+    transition: .3s;
+  }
+
+  .nav-item a{
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.5s;
+  }
+  .nav-item a:hover {
+    color: #FFCD1E;
+  }
+  
