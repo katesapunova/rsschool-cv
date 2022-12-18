@@ -1,0 +1,208 @@
+@font-face {
+    font-family: "Basteleur";
+    font-style: normal;
+    font-weight: 700;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: url("assets/fonts/basteleur/Basteleur-Bold.ttf") format("truetype"),
+         /* Если не получилось, загрузит woff2 */
+         url("assets/fonts/basteleur/Basteleur-Bold.woff2") format("woff2"),
+         /* Если браузер не поддерживает woff2, загрузит woff */
+         url("assets/fonts/basteleur/Basteleur-Bold.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: "Basteleur";
+    font-style: normal;
+    font-weight: 400;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: url("assets/fonts/basteleur/Basteleur-Moonlight.ttf") format("truetype"),
+         /* Если не получилось, загрузит woff2 */
+         url("assets/fonts/basteleur/Basteleur-Moonlight.woff2") format("woff2"),
+         /* Если браузер не поддерживает woff2, загрузит woff */
+         url("assets/fonts/basteleur/Basteleur-Moonlight.woff") format("woff");
+  }
+  
+  * {
+    box-sizing: border-box;
+    
+  }
+
+  html {
+    scroll-behavior: smooth; 
+  }
+
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .main-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .section {
+    width: 40%;
+  }
+
+  @media (max-width: 768px) {
+    .section {
+      width: 100%;
+    }
+  }
+
+  .body {
+    min-height: 100vh;
+    margin: 0; 
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   /*  background: url(/assets/svg/background.svg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    background-color: #151515;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    color:#fff;
+  }
+
+  .nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+    transition: .3s;
+  }
+
+  .nav-item a{
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.5s;
+  }
+  .nav-item a:hover {
+    color: #FFCD1E;
+  }
+  
+  .contacts-list, .skills-list, .courses-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .intro-section {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  
+  .massive-sections {
+    width: 50%;
+  }
+
+  .massive-sections .section {
+    width: 100%;
+  }
+
+  span {
+    font-weight: bold;
+  }
+
+  
+
+  .main-title {
+    font-family: Basteleur;
+    font-weight: 400;
+    font-size: 40px;
+    margin: 0;
+  }
+
+  .intro-section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .section-title {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  }
+
+  .link {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.5s;
+  }
+  
+  .link:hover {
+    color: #FFCD1E;
+  }  
+
+  .avatar-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+  }
+
+  .avatar-container {
+    border-radius: 100%;
+    background-clip: padding-box;
+    border: solid 5px transparent;
+    position: relative;
+    display: inline-block;
+    margin-right: 100px ;
+  }
+
+  .avatar-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -5px;
+    /* !importanté */
+    border-radius: inherit;
+    /* !importanté */
+    background: linear-gradient(319.69deg, #0ED5F5 4.84%, rgba(14, 213, 245, 0) 61.56%);
+  }
+
+.footer-logo {
+  width: 120px;
+  height: auto;
+  
+}
+
+footer {
+  margin: 40px;
+
+}
+
+.flex-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-text {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+hr {
+  color: #fff;
+}
